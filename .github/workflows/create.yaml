@@ -1,0 +1,12 @@
+name: ec2-creation 
+on: [push] #triggers 
+jobs: 
+   terraform: 
+      runs-on: ubuntu-latest #Linux os. we can have windowsand mac 
+      steps: #stages 
+         - name: checkout the code 
+           uses: actions/checkout@v5 
+         - name: setup terraform 
+           uses: hashicorp/setup-terraform@v4 
+         - name: run init 
+           run: terraform init   
