@@ -9,4 +9,4 @@ jobs:
          - name: setup terraform 
            uses: hashicorp/setup-terraform@v5
          - name: run init 
-           run: terraform init   
+           run: terraform init    
